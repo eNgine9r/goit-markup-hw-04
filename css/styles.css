@@ -153,6 +153,16 @@ img {
     color: var(--accent-color);
 }
 
+.item .icon-address{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    background-size: 0;
+}
+
 /* Hero */
 
 .hero {
@@ -230,33 +240,18 @@ img {
     margin-right: 0px;
 }
 
-.feature-list .item::before{
-    margin-bottom: 30px;
-    display: block;
-    content: "";
-    height: 120px;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--bacground-color-team-button-list);
+.item .icon-feature {
     padding: 25px 100px;
+    margin-bottom: 30px;
+    border: 0;
+    border-radius: 4px;
+    width: 270px;
+    height: 120px;
+    color: #afb1b8;
+    background-color: var(--bacground-color-team-button-list);
+    background-size: 270px;
 }
 
-.icon-antenna::before{
-    background-image: url(../images/antenna1.png);
-}
-
-.icon-clock::before {
-    background-image: url(../images/clock1.png);
-}
-
-.icon-diagram::before {
-    background-image: url(../images/diagram1.png);
-}
-
-.icon-astronaut::before {
-    background-image: url(../images/astronaut1.png);
-}
 
 .feature-list .title {
     margin-bottom: 10px;
@@ -300,6 +295,8 @@ img {
     margin-right: 30px;
     width: 270px;
     text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team .item:last-child {
@@ -330,6 +327,28 @@ img {
     color: var(--priamary-text-color);
     font-size: 16px;
     line-height: 1.19;
+}
+
+.button-team {
+    padding: 0;
+    border: 0;
+    margin-top: 16px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+    background-color: #FFFFFF;
+}
+
+.button-team:hover {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 /* Footer */
@@ -382,22 +401,6 @@ img {
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
-}
-
-.footer-social .item{
-    display: inline-block;
-    content: "";
-    height: 44px;
-    width: 44px;
-    background-color: rgba(255, 255, 255, 0.1);;
-    background-size: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-}
-
-.icon-instagram::before{
-    background-image: url(../images/instagram2.png);
 }
 
 /* Button */
@@ -477,6 +480,7 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: var(--bacground-priamary);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
 
