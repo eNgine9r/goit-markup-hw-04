@@ -26,6 +26,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -153,12 +157,13 @@ img {
     color: var(--accent-color);
 }
 
-.item .icon-address{
+.icon-address{
     padding: 0;
     margin: 0;
     border: 0;
-    width: 20px;
-    height: 20px;
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
     fill: currentColor;
     background-size: 0;
 }
@@ -329,7 +334,7 @@ img {
     line-height: 1.19;
 }
 
-.button-team {
+.team-list .button{
     padding: 0;
     border: 0;
     margin-top: 16px;
@@ -340,7 +345,7 @@ img {
     background-color: #FFFFFF;
 }
 
-.button-team:hover {
+.team-list .button-team:hover {
     color: #FFFFFF;
     background-color: #2196F3;
 }
