@@ -26,7 +26,7 @@ body {
     letter-spacing: 0.03em;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -144,6 +144,10 @@ img {
 }
 
 .address-link .link {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
     color: var(--priamary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -152,20 +156,13 @@ img {
     text-decoration: none;
 }
 
+.address-icon {
+    fill: currentColor;
+}
+
 .address-link .link:hover,
 .address-link .link:focus {
     color: var(--accent-color);
-}
-
-.icon-address{
-    padding: 0;
-    margin: 0;
-    border: 0;
-    margin-right: 10px;
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
-    background-size: 0;
 }
 
 /* Hero */
@@ -208,11 +205,6 @@ img {
     padding-bottom: 94px;
 }
 
-.feature {
-    padding-top: 94px;
-    padding-bottom: 0px;
-}
-
 .section-title {
     margin-bottom: 50px;
     color: var(--title-text-color);
@@ -223,6 +215,11 @@ img {
 }
 
 /* Features */
+
+.feature {
+    padding-top: 94px;
+    padding-bottom: 0px;
+}
 
 .feature-list {
     padding-bottom: 0px;
@@ -245,17 +242,6 @@ img {
     margin-right: 0px;
 }
 
-.item .icon-feature {
-    padding: 25px 100px;
-    margin-bottom: 30px;
-    border: 0;
-    border-radius: 4px;
-    width: 270px;
-    height: 120px;
-    color: #afb1b8;
-    background-color: var(--bacground-color-team-button-list);
-    background-size: 270px;
-}
 
 
 .feature-list .title {
@@ -268,9 +254,21 @@ img {
     text-transform: uppercase;
 }
 
-.feature-list .text {
-    margin-top: 0;
-    margin-bottom: 0px;
+.feature-icon-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-icon-item {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
 }
 
 /* Works */
@@ -334,26 +332,67 @@ img {
     line-height: 1.19;
 }
 
-.team-list .button{
-    padding: 0;
-    border: 0;
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social.item {}
+
+.social-link {
     margin-top: 16px;
     width: 44px;
     height: 44px;
-    border-radius: 50%;
-    color: #afb1b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #FFFFFF;
+    border-radius: 50%;
+    color: #AFB1B8;
 }
 
-.team-list .button-team:hover {
-    color: #FFFFFF;
-    background-color: #2196F3;
-}
-
-.button-icon {
-    width: 20px;
-    height: 20px;
+.social-icon {
     fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+/* Сustomers */
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-item {
+    width: calc((100% - 60px) / 3);
+}
+
+.clients-link {
+    width: 100%;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: #AFB1B8;
+}
+
+.clients-icon {
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: #2196F3;
+    color: #2196F3;
 }
 
 /* Footer */
@@ -407,6 +446,47 @@ img {
     line-height: 1.71;
     text-decoration: none;
 }
+
+.footer-container {
+    display: flex;
+}
+
+.footer-social-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--bacground-priamary);
+}
+
+.footer-list-icon {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-social-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--hero-footer-text-color);
+    border-radius: 50%;
+}
+
+.footer-social-icon {
+    fill: currentColor;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #2196F3;
+}
+
+
 
 /* Button */
 
@@ -485,8 +565,11 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: var(--bacground-priamary);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
+.project-list .item:hover,
+.project-list .item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-list .item:nth-child(3n) {
