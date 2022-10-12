@@ -449,7 +449,10 @@ img {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
+    gap: 70px;
 }
+
 
 .footer-social-title {
     font-style: normal;
@@ -462,11 +465,11 @@ img {
 
 .footer-list-icon {
     display: flex;
-    justify-content: center;
     gap: 10px;
 }
 
 .footer-social-link {
+    margin-top: 20px;
     width: 44px;
     height: 44px;
     display: flex;
@@ -565,12 +568,22 @@ img {
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: var(--bacground-priamary);
+
 }
 
 .project-list .item:hover,
 .project-list .item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.project-link {
+    text-decoration: none;
+}
+
+/* .project-link:hover,
+.project-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
 
 .project-list .item:nth-child(3n) {
     margin-right: 0px;
