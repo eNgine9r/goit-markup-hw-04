@@ -566,9 +566,9 @@ img {
 .project-list .item{
     width: 370px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     margin-right: 30px;
     margin-bottom: 30px;
     background-color: var(--bacground-priamary);
