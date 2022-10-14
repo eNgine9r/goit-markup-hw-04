@@ -322,6 +322,9 @@ img {
 .team-list {
     display: flex;
     flex-wrap: wrap;
+}
+
+.team-item{
     background-color: var(--hero-footer-text-color);
 }
 
@@ -337,8 +340,6 @@ img {
     justify-content: center;
     gap: 10px;
 }
-
-.social.item {}
 
 .social-link {
     margin-top: 16px;
